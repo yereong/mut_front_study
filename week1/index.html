@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+        .frame{
+            /* class가 .frame인 아이의 속성값 */
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            margin-top: -200px;
+            margin-left: -200px;
+            border-radius: 2px;
+                box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+                overflow: hidden;
+            color: #333;
+                background: #2c3e50;
+                font-family: 'Open Sans', Helvetica, sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+        }
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .btn{
+            transition: 0.5s;
+            background: #fff;
+            border: 0px;
+            padding: 20px 40px 20px 40px;
+            box-shadow: 10px 10px 0px purple;
+        }
+        .btn:hover{
+            transition: 0.5s;
+            background: purple;
+            border: 0px;
+            padding: 20px 40px 20px 40px;
+            transform: translate(10px,10px);
+            box-shadow: -10px -10px 0px #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class = "center">
+            <button class ="btn">HOVER ME</button>
+        </div>
+    </div>
+    
+</body>
+</html>
